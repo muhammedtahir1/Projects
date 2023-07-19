@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header Chatgpt</title>
+
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .header {
+  background-color: rgb(255, 210, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 2rem;
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+.logo-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.navigation {
+  text-align: end;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menu-icon span {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li {
+  margin-left: 1rem;
+}
+
+.nav-list li:first-child {
+  margin-left: 0;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  background-color: #fff;
+  color: rgb(255, 210, 0);
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .menu-toggle:checked + .nav-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="path_to_your_logo.png" alt="Logo" class="logo-image">
+      <span class="logo-name">EduHub</span>
+    </div>
+    <nav class="navigation">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+    
+  
+  
+</body>
+</html>
