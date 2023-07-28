@@ -64,11 +64,11 @@ span {
   color: rgb(255, 210, 0);
 }
 
-/* Media query for mobile devices */
-@media (max-width: 768px) {
+/* Media query for iPhones with a viewport width of 375px */
+@media only screen and (max-width: 375px) {
   .header-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 1rem; /* Adjust the padding for mobile devices */
   }
 
@@ -89,11 +89,13 @@ span {
   }
 
   nav ul {
-    flex-direction: column; /* Stack navigation items vertically on mobile */
+    flex-direction: row; /* Display navigation items horizontally on mobile */
+    justify-content: space-between; /* Space items evenly */
+    width: 100%; /* Take full width */
   }
 
   nav ul li {
-    padding: 0.5rem 0; /* Reduce the padding for mobile devices */
+    padding: 0; /* Remove the padding for mobile devices */
   }
 
   .navigation-bar {
