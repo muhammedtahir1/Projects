@@ -132,15 +132,6 @@ span{
   cursor: pointer;
 }
 
-.moon {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  box-shadow: 9px 9px 0 0 #333;
-  margin-left: 182px;
-  margin-top: -5px;
-}
-
 .row-1{
   display: flex;
   margin-right: 5rem;
@@ -168,7 +159,7 @@ span{
   text-align: center;
 }
 
-/* Add your remaining CSS styles for subject, subject-code, download-button, and moon as needed */
+/* Add your remaining CSS styles for subject, subject-code, download-button */
 
 .container {
   display: flex;
