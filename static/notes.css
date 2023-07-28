@@ -84,6 +84,10 @@ span {
     margin-left: 0; /* Center the logo name on mobile devices */
   }
 
+  nav {
+    margin-top: 1rem; /* Add some spacing between logo and navigation for mobile */
+  }
+
   nav ul {
     flex-direction: column; /* Stack navigation items vertically on mobile */
   }
